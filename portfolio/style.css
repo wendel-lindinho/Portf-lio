@@ -75,13 +75,21 @@ nav{
 header{
     position: relative;
     padding-top: 2rem;
-    display: grid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem ;
 }
-p{
+header .content p{
     color: aliceblue;
+    margin-bottom: 2rem;
 }
+
+header .content {
+    max-width: 50%;
+}
+
 
 header .content h4{
     margin-bottom: 1rem;
@@ -101,4 +109,30 @@ header .content h1{
 header .content h1 span{
     -webkit-text-fill-color: transparent;
     -webkit-text-stroke: 1px aliceblue;
+}
+
+header .imagem img{
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+header .imagem::before{
+    content: "o";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(28%);
+    font-size: 38rem;
+    font-weight: 400;
+    line-height: 39rem;
+    color: aliceblue;
+    opacity: 0.2;
+    z-index: -100;
+    filter: blur(3px);
+}
+
+header .imagem img{
+    max-width: 600px;
+    margin: auto;
 }

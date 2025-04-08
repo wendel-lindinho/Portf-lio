@@ -207,7 +207,8 @@ section .header{
     color: #1d4ed8;
 }
 
-.footer {
+  
+footer {
     background-color: #1f1f1f;
     padding: 4rem 2rem;
     text-align: center;
@@ -216,7 +217,7 @@ section .header{
     overflow: hidden;
 }
 
-.footer .coluna .logo {
+footer .coluna .logo {
     font-size: 1.5rem;
     color: #ffffff;
     margin-bottom: 1rem;
@@ -256,6 +257,7 @@ footer .blur {
     left: 50%;
     transform: translateX(-50%);
 }
+
 
 @media (width < 900px){
     .nav-links{
